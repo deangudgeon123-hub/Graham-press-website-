@@ -1,6 +1,6 @@
-# Graham Press — Vercel-ready website
+# The Printing Press — portfolio website
 
-This is the complete production codebase for the Graham Press website concept.
+This is a fictional print-studio website created as a portfolio piece.
 It uses Next.js and is ready to deploy through GitHub and Vercel.
 
 ## Deploy through GitHub
@@ -30,8 +30,8 @@ npm run dev
 
 Then open http://localhost:3000.
 
-## Important before using it as the live business website
+## Important before adapting it for a live client
 
-- Replace all concept/example prices with figures confirmed by Graham Press.
-- Confirm the telephone number, email address and opening hours.
-- Remove the “Website concept” notice when Graham Press approves the final site.
+- Replace the illustrative prices with figures confirmed by the client.
+- Add the client’s telephone number, email address, location and opening hours.
+- Replace the portfolio notice with the client’s approved launch message.
