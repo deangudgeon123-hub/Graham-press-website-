@@ -16,7 +16,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 a { color: inherit; text-decoration: none; }
@@ -75,11 +75,24 @@ button, select, input { font: inherit; }
   line-height: 1;
   min-width: max-content;
 }
-.brand-logo {
-  background: #00451f;
-  display: block;
-  height: auto;
-  width: 245px;
+.brand-name {
+  align-items: baseline;
+  color: var(--green-deep);
+  display: inline-flex;
+  font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+.brand-name em {
+  color: var(--green-soft);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.58em;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-right: 6px;
+  text-transform: none;
 }
 .brand-sub {
   color: var(--green-soft);
@@ -188,14 +201,16 @@ nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); }
 .eyebrow.dark { color: var(--green-soft); }
 .eyebrow.light { color: var(--lime); }
 .hero h1, .section-heading h2, .quote-intro h2, .local-copy h2, .visit-copy h2, .final-cta h2 {
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(46px, 5vw, 78px);
-  letter-spacing: -0.055em;
-  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
   margin: 0;
 }
 h1 em, h2 em {
   color: var(--lime);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-weight: 400;
 }
 .section-heading h2 em, .visit-copy h2 em, .process h2 em { color: var(--green-soft); }
@@ -339,7 +354,22 @@ h1 em, h2 em {
   width: 210px;
   z-index: 5;
 }
-.business-card .card-logo { display: block; height: auto; width: 145px; }
+.business-card .card-brand {
+  color: var(--green-deep);
+  font-family: "Arial Narrow", "Avenir Next Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+.business-card .card-brand em {
+  color: var(--green-soft);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.72em;
+  font-weight: 400;
+  margin-right: 3px;
+  text-transform: none;
+}
 .business-card small { font-size: 7px; font-weight: 900; letter-spacing: 0.18em; }
 .colour-wheel {
   background: conic-gradient(#00a8e8 0 25%, #ec168c 25% 50%, #ffdf21 50% 75%, #151515 75%);
@@ -891,7 +921,8 @@ footer { background: var(--green-deep); color: white; padding: 62px 0 24px; }
   gap: 44px;
   grid-template-columns: auto 1fr auto;
 }
-.footer-brand .brand-logo { width: 245px; }
+.footer-brand .brand-name { color: white; }
+.footer-brand .brand-name em { color: var(--lime); }
 .footer-brand .brand-sub { color: var(--lime); }
 .footer-main > p {
   color: rgba(255, 255, 255, 0.55);
@@ -960,7 +991,7 @@ footer { background: var(--green-deep); color: white; padding: 62px 0 24px; }
   body { padding-bottom: 64px; }
   .demo-ribbon { align-items: flex-start; flex-direction: column; gap: 4px; padding: 7px 14px; }
   .demo-ribbon p { font-size: 9px; }
-  .brand-logo { width: 195px; }
+  .brand-name { font-size: 21px; }
   .brand-sub { font-size: 7px; margin-top: 5px; }
   .hero::before { display: none; }
   .hero-inner { padding-bottom: 55px; padding-top: 52px; }
@@ -976,7 +1007,7 @@ footer { background: var(--green-deep); color: white; padding: 62px 0 24px; }
   .paper-main p { bottom: 23px; font-size: 7px; left: 27px; }
   .paper-label { font-size: 6px; }
   .business-card { bottom: 0; height: 78px; left: 38px; padding: 15px; width: 155px; }
-  .business-card .card-logo { width: 110px; }
+  .business-card .card-brand { font-size: 12px; }
   .business-card small { font-size: 5px; }
   .colour-wheel { border-width: 7px; bottom: 2px; height: 72px; right: 0; width: 72px; }
   .colour-wheel i { border-width: 5px; inset: 17px; }
