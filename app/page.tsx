@@ -160,7 +160,7 @@ export default function Home() {
       <header className="site-header">
         <div className="header-inner">
           <a className="brand" href="#top" aria-label="Graham Press home">
-            <span className="brand-name">graham press</span>
+            <img className="brand-logo" src="/graham-press-logo.svg" alt="Graham Press" />
             <span className="brand-sub">Design &amp; Print</span>
           </a>
 
@@ -224,7 +224,7 @@ export default function Home() {
               <div className="crop-marks"><i /><i /><i /><i /></div>
             </div>
             <div className="business-card">
-              <span>graham press</span>
+              <img className="card-logo" src="/graham-press-logo.svg" alt="" />
               <small>YOUR IDEAS, IN PRINT.</small>
             </div>
             <div className="colour-wheel" aria-hidden="true"><i /></div>
@@ -482,7 +482,7 @@ export default function Home() {
       <footer>
         <div className="section-inner footer-main">
           <a className="brand footer-brand" href="#top">
-            <span className="brand-name">graham press</span>
+            <img className="brand-logo" src="/graham-press-logo.svg" alt="Graham Press" />
             <span className="brand-sub">Design &amp; Print</span>
           </a>
           <p>Single to full colour printing • Large format • Copying • Stationery • Binding • Design</p>
