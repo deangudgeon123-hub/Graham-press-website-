@@ -138,42 +138,30 @@ export default function Home() {
     return Math.ceil(quantity.price * multiplier + design);
   }, [finish, quantity.price]);
 
-  const emailHref = `mailto:grahampress@btconnect.com?subject=${encodeURIComponent(
-    `Print enquiry: ${selected.name}`,
-  )}&body=${encodeURIComponent(
-    `Hello Graham Press,\n\nI'd like a confirmed quote for ${quantity.label} × ${selected.name}.\nArtwork option: ${
-      finish === "standard"
-        ? "Print-ready artwork"
-        : finish === "premium"
-          ? "Premium paper/finish"
-          : "I need design help"
-    }.\n\nThe website guide showed approximately £${estimate}. Please confirm the final price and turnaround.\n\nThank you.`,
-  )}`;
-
   return (
     <main>
       <div className="demo-ribbon">
-        <span>Website concept</span>
-        <p>Guide prices are examples for Graham Press to confirm</p>
+        <span>Portfolio concept</span>
+        <p>A fictional print studio website created to showcase a modern customer journey</p>
       </div>
 
       <header className="site-header">
         <div className="header-inner">
-          <a className="brand" href="#top" aria-label="Graham Press home">
-            <img className="brand-logo" src="/graham-press-logo.svg" alt="Graham Press" />
-            <span className="brand-sub">Design &amp; Print</span>
+          <a className="brand" href="#top" aria-label="The Printing Press home">
+            <span className="brand-name"><em>The</em> Printing Press</span>
+            <span className="brand-sub">Independent design &amp; print</span>
           </a>
 
           <nav aria-label="Main navigation">
             <a href="#services">Services</a>
             <a href="#prices">Price guide</a>
             <a href="#process">How it works</a>
-            <a href="#visit">Visit us</a>
+            <a href="#contact">Contact</a>
           </nav>
 
-          <a className="header-call" href="tel:01243822797">
-            <span>Call us</span>
-            01243 822797
+          <a className="header-call" href="#quote">
+            <span>Instant guide</span>
+            Get a price
           </a>
         </div>
       </header>
@@ -183,7 +171,7 @@ export default function Home() {
         <div className="hero-glow hero-glow-two" />
         <div className="hero-inner">
           <div className="hero-copy">
-            <p className="eyebrow"><span /> Your local Bognor Regis print shop</p>
+            <p className="eyebrow"><span /> Independent design &amp; print studio</p>
             <h1>
               Your idea.
               <br />
@@ -197,14 +185,14 @@ export default function Home() {
               <a className="button button-lime" href="#quote">
                 Get a guide price <ArrowIcon />
               </a>
-              <a className="button button-ghost" href="tel:01243822797">
-                Call 01243 822797
+              <a className="button button-ghost" href="#services">
+                Explore services
               </a>
             </div>
             <div className="hero-trust" aria-label="Service highlights">
               <span><b>✓</b> Any size job</span>
               <span><b>✓</b> Design help available</span>
-              <span><b>✓</b> Local collection</span>
+              <span><b>✓</b> Clear guide pricing</span>
             </div>
           </div>
 
@@ -212,7 +200,7 @@ export default function Home() {
             <div className="registration-marks mark-one">+</div>
             <div className="registration-marks mark-two">+</div>
             <div className="paper paper-back">
-              <span className="paper-kicker">GRAHAM PRESS</span>
+              <span className="paper-kicker">THE PRINTING PRESS</span>
               <span className="paper-lines" />
               <span className="paper-lines short" />
               <div className="swatches"><i /><i /><i /><i /></div>
@@ -224,7 +212,7 @@ export default function Home() {
               <div className="crop-marks"><i /><i /><i /><i /></div>
             </div>
             <div className="business-card">
-              <img className="card-logo" src="/graham-press-logo.svg" alt="" />
+              <span className="card-brand"><em>The</em> Printing Press</span>
               <small>YOUR IDEAS, IN PRINT.</small>
             </div>
             <div className="colour-wheel" aria-hidden="true"><i /></div>
@@ -252,7 +240,7 @@ export default function Home() {
             </div>
             <p>
               Whether it is for work, a celebration or something personal,
-              Graham Press can help you choose the right paper, finish and quantity.
+              our studio helps you choose the right paper, finish and quantity.
             </p>
           </div>
 
@@ -280,8 +268,8 @@ export default function Home() {
             <p className="eyebrow light"><span /> Straightforward pricing</p>
             <h2>Know the rough cost <em>before you ask.</em></h2>
             <p>
-              Choose a popular product for an instant guide. Graham Press can then
-              confirm the exact paper, artwork and turnaround with you.
+              Choose a popular product for an instant guide, then confirm the exact
+              paper, artwork and turnaround before anything goes to print.
             </p>
 
             <div className="quick-price-list">
@@ -291,7 +279,7 @@ export default function Home() {
               ))}
             </div>
             <p className="price-disclaimer">
-              Concept pricing only. Final prices, VAT and turnaround to be confirmed by Graham Press.
+              Illustrative portfolio pricing only. A real client would confirm final prices, VAT and turnaround.
             </p>
           </div>
 
@@ -362,10 +350,10 @@ export default function Home() {
               <p>Final quote confirmed before printing</p>
             </div>
 
-            <a className="button button-dark full-button" href={emailHref}>
-              Ask us to confirm this quote <ArrowIcon />
+            <a className="button button-dark full-button" href="#contact">
+              Continue with this estimate <ArrowIcon />
             </a>
-            <p className="small-centred">Prefer to talk? <a href="tel:01243822797">Call 01243 822797</a></p>
+            <p className="small-centred">Portfolio demo — enquiry details are connected for each live client.</p>
           </div>
         </div>
       </section>
@@ -404,17 +392,17 @@ export default function Home() {
       <section className="local-section">
         <div className="section-inner local-grid">
           <div className="local-art" aria-hidden="true">
-            <div className="local-card local-card-one"><span>EST.</span><strong>LOCAL</strong><small>BOGNOR REGIS</small></div>
+            <div className="local-card local-card-one"><span>PRINTED</span><strong>LOCAL</strong><small>INDEPENDENT STUDIO</small></div>
             <div className="local-card local-card-two"><span>QUALITY</span><strong>IN EVERY</strong><small>DETAIL</small></div>
-            <div className="local-roundel">GP<i>✦</i></div>
+            <div className="local-roundel">TP<i>✦</i></div>
           </div>
           <div className="local-copy">
             <p className="eyebrow light"><span /> Proper local service</p>
             <h2>Real print advice from <em>real people.</em></h2>
             <p>
-              Graham Press is a long-established independent design and print shop in
-              Bognor Regis. Pop in, explain the job and get experienced help without
-              the guesswork of an online-only printer.
+              The Printing Press is a fictional independent studio brand created for
+              this portfolio. The concept shows how a local printer can make services,
+              prices and the path to an enquiry easy to understand.
             </p>
             <div className="local-points">
               <span><b>01</b> Friendly, practical advice</span>
@@ -425,19 +413,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="visit section" id="visit">
+      <section className="visit section" id="contact">
         <div className="section-inner visit-grid">
           <div className="visit-copy">
-            <p className="eyebrow dark"><span /> Visit the shop</p>
+            <p className="eyebrow dark"><span /> Start a print project</p>
             <h2>Let’s get it <em>in print.</em></h2>
-            <p>Call, email or drop in with your file or idea. We will help you work out the best way to print it.</p>
+            <p>A live version can connect these clear next steps to the client’s preferred phone, inbox or order form.</p>
 
             <div className="contact-cards">
-              <a href="tel:01243822797">
-                <span>PHONE</span><strong>01243 822797</strong><ArrowIcon />
+              <a href="#quote">
+                <span>PRICE GUIDE</span><strong>Build an instant estimate</strong><ArrowIcon />
               </a>
-              <a href="mailto:grahampress@btconnect.com">
-                <span>EMAIL</span><strong>grahampress@btconnect.com</strong><ArrowIcon />
+              <a href="#services">
+                <span>SERVICES</span><strong>Explore what we print</strong><ArrowIcon />
               </a>
             </div>
           </div>
@@ -447,21 +435,19 @@ export default function Home() {
               <span className="road road-one" />
               <span className="road road-two" />
               <span className="road road-three" />
-              <span className="map-pin"><i>GP</i></span>
-              <span className="map-label">LONDON ROAD</span>
+              <span className="map-pin"><i>TP</i></span>
+              <span className="map-label">YOUR LOCAL STUDIO</span>
             </div>
             <div className="visit-details">
               <div>
-                <span>FIND US</span>
-                <strong>80 London Road<br />Bognor Regis, PO21 1DD</strong>
-                <a href="https://www.google.com/maps/search/?api=1&query=Graham+Press+80+London+Road+Bognor+Regis+PO21+1DD" target="_blank" rel="noreferrer">
-                  Get directions <ArrowIcon />
-                </a>
+                <span>PORTFOLIO CONCEPT</span>
+                <strong>A fictional identity designed to demonstrate a complete modern print website.</strong>
+                <a href="#top">View from the top <ArrowIcon /></a>
               </div>
               <div>
-                <span>OPENING HOURS</span>
-                <strong>Monday–Friday<br />09:30–13:00<br />14:00–15:00</strong>
-                <small>Closed Saturday &amp; Sunday</small>
+                <span>TYPICAL STUDIO HOURS</span>
+                <strong>Monday–Friday<br />09:00–17:00</strong>
+                <small>Real client details are added before launch</small>
               </div>
             </div>
           </div>
@@ -474,7 +460,7 @@ export default function Home() {
           <h2>Whatever you need,<br /><em>let’s print it properly.</em></h2>
           <div>
             <a className="button button-lime" href="#quote">Get a guide price <ArrowIcon /></a>
-            <a className="button button-ghost" href="tel:01243822797">Call the shop</a>
+            <a className="button button-ghost" href="#services">View services</a>
           </div>
         </div>
       </section>
@@ -482,24 +468,24 @@ export default function Home() {
       <footer>
         <div className="section-inner footer-main">
           <a className="brand footer-brand" href="#top">
-            <img className="brand-logo" src="/graham-press-logo.svg" alt="Graham Press" />
-            <span className="brand-sub">Design &amp; Print</span>
+            <span className="brand-name"><em>The</em> Printing Press</span>
+            <span className="brand-sub">Independent design &amp; print</span>
           </a>
           <p>Single to full colour printing • Large format • Copying • Stationery • Binding • Design</p>
           <div className="footer-links">
             <a href="#services">Services</a>
             <a href="#prices">Prices</a>
-            <a href="#visit">Contact</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
         <div className="section-inner footer-bottom">
-          <span>© 2026 Graham Press. Website concept.</span>
-          <span>80 London Road, Bognor Regis, PO21 1DD</span>
+          <span>© 2026 The Printing Press. Portfolio concept.</span>
+          <span>Fictional brand created for showcase purposes.</span>
         </div>
       </footer>
 
-      <div className="mobile-actions" aria-label="Quick contact">
-        <a href="tel:01243822797">Call now</a>
+      <div className="mobile-actions" aria-label="Quick actions">
+        <a href="#services">Services</a>
         <a href="#quote">Guide price <ArrowIcon /></a>
       </div>
     </main>
