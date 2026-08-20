@@ -75,22 +75,18 @@ button, select, input { font: inherit; }
   line-height: 1;
   min-width: max-content;
 }
-.brand-name {
-  color: var(--green);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  letter-spacing: 0.01em;
-  text-transform: lowercase;
-  -webkit-text-stroke: 1px var(--green);
-  text-shadow: 1.5px 1.5px 0 var(--lime);
+.brand-logo {
+  background: #00451f;
+  display: block;
+  height: auto;
+  width: 245px;
 }
 .brand-sub {
   color: var(--green-soft);
-  font-size: 8px;
+  font-size: 7px;
   font-weight: 800;
   letter-spacing: 0.25em;
-  margin-top: 7px;
+  margin-top: 5px;
   text-transform: uppercase;
 }
 nav { align-items: center; display: flex; gap: 34px; }
@@ -343,7 +339,7 @@ h1 em, h2 em {
   width: 210px;
   z-index: 5;
 }
-.business-card span { font-family: Impact, sans-serif; font-size: 22px; text-shadow: 1px 1px var(--lime); }
+.business-card .card-logo { display: block; height: auto; width: 145px; }
 .business-card small { font-size: 7px; font-weight: 900; letter-spacing: 0.18em; }
 .colour-wheel {
   background: conic-gradient(#00a8e8 0 25%, #ec168c 25% 50%, #ffdf21 50% 75%, #151515 75%);
@@ -895,7 +891,7 @@ footer { background: var(--green-deep); color: white; padding: 62px 0 24px; }
   gap: 44px;
   grid-template-columns: auto 1fr auto;
 }
-.footer-brand .brand-name { color: white; -webkit-text-stroke-color: white; }
+.footer-brand .brand-logo { width: 245px; }
 .footer-brand .brand-sub { color: var(--lime); }
 .footer-main > p {
   color: rgba(255, 255, 255, 0.55);
@@ -964,7 +960,7 @@ footer { background: var(--green-deep); color: white; padding: 62px 0 24px; }
   body { padding-bottom: 64px; }
   .demo-ribbon { align-items: flex-start; flex-direction: column; gap: 4px; padding: 7px 14px; }
   .demo-ribbon p { font-size: 9px; }
-  .brand-name { font-size: 23px; }
+  .brand-logo { width: 195px; }
   .brand-sub { font-size: 7px; margin-top: 5px; }
   .hero::before { display: none; }
   .hero-inner { padding-bottom: 55px; padding-top: 52px; }
@@ -980,7 +976,7 @@ footer { background: var(--green-deep); color: white; padding: 62px 0 24px; }
   .paper-main p { bottom: 23px; font-size: 7px; left: 27px; }
   .paper-label { font-size: 6px; }
   .business-card { bottom: 0; height: 78px; left: 38px; padding: 15px; width: 155px; }
-  .business-card span { font-size: 17px; }
+  .business-card .card-logo { width: 110px; }
   .business-card small { font-size: 5px; }
   .colour-wheel { border-width: 7px; bottom: 2px; height: 72px; right: 0; width: 72px; }
   .colour-wheel i { border-width: 5px; inset: 17px; }
