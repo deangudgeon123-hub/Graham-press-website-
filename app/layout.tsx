@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Graham Press — Design & Print",
+  title: "The Printing Press — Design & Print",
   description:
-    "Local design and printing in Bognor Regis. Colour printing, copying, large format, stationery, binding, laminating and design help.",
+    "A modern portfolio concept for an independent design and print studio, with clear services, guide pricing and an easy enquiry journey.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
